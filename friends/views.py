@@ -502,7 +502,7 @@ def newsfeed_messages(request) :
         profile = Profile.objects.get(user_id = user.id)
         chatlist = []
         roomname = ""
-        if friend is not None :
+        if friends is not None :
             for friend in friends :
                 if friend is not None :
                     friend_obj = User.objects.get(username = friend)
